@@ -122,7 +122,7 @@ const EventButton = (props: EventButtonProps) => {
     height:
       state.height !== null ? state.height : item.height || MONTH_EVENT_HEIGHT,
     width: state.width !== null ? state.width : item.width || '100%',
-    top: state.offsetTop !== null ? state.offsetTop : item.offsetTop,
+    top: state.offsetTop !== null ? state.offsetTop - 504: item.offsetTop,
     left: state.offsetLeft !== null ? state.offsetLeft : item.offsetLeft,
     zIndex: state.zIndex || item.zIndex,
     border: isDark ? 'solid 1px #1d1f26' : 'solid 1px white',
