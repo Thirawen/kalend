@@ -9,10 +9,12 @@ const CurrentHourLine = () => {
 
   const currentTime = DateTime.now();
 
+
   const wrapperStyle: any = {
     top:
-      currentTime.hour * config.hourHeight +
-      (currentTime.minute / 60) * config.hourHeight,
+      currentTime.hour >= 7
+      ? currentTime.hour * config.hourHeight + (currentTime.minute / 60) * config.hourHeight - 576
+      : 0
   };
 
   return (
