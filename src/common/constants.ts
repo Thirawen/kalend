@@ -11,6 +11,8 @@ export const MONTH_EVENT_HEIGHT = 14;
 export const SCROLLBAR_WIDTH = 15;
 
 export const hoursArrayString = [
+  '07',
+  '08',
   '09',
   '10',
   '11',

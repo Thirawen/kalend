@@ -27,6 +27,6 @@ export enum WEEKDAY_START {
 }
 
 export enum TIME_FORMAT {
-  H_24 = '24',
+  H_24 = '17',
   H_12 = '12',
 }

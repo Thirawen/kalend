@@ -82,11 +82,11 @@ const DaysViewOneDay = (props: DaysViewOneDayProps) => {
     position: 'absolute',
     top: offsetTop,
     height: offsetTopEnd - offsetTop,
-    background: store.style.primaryColor,
-    width: '100%',
-    zIndex: 9,
+    background: 'transparent',
+    width: '0%',
+    zIndex: -1,
     borderRadius: 8,
-    opacity: 0.8,
+    opacity: 0,
   };
 
   const handleEventClickInternal = (event: any) => {
@@ -310,7 +310,7 @@ const DaysViewOneDay = (props: DaysViewOneDayProps) => {
 
   const oneDayStyle: any = {
     width: width / getDaysNum(selectedView),
-    height: hourHeight * 24,
+    height: hourHeight * 17,
   };
 
   const isToday: boolean = LuxonHelper.isToday(day);
