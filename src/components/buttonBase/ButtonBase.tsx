@@ -111,31 +111,57 @@ const ButtonBase = (props: ButtonBaseProps) => {
       )}`
     : `Kalend__button ${parseCssDark('Kalend__ButtonBase', isDark)}`;
 
-  return (
-    <a
-      id={id}
-      ref={buttonRef}
-      //onClick={onButtonClick}
-      //onTouchMove={onTouchMove}
-      //onTouchStart={onTouchStart}
-      //onTouchEnd={onTouchEnd}
-      //onMouseDown={onMouseDown}
-      //onMouseUp={onMouseUp}
-      //onMouseMove={onMouseMove}
-      // onTouchStart={handleTouchStart}
-      // onMouseLeave={handleTouchOff}
-      // onTouchEnd={handleTouchOff}
-      // onTouchEndCapture={handleTouchCancel}
-      className={buttonClassName}
-      style={style}
-      href={'/planning/book?id=' + id}
-    >
-      {children ? children : buttonText}
-      {isPressed && !disabled ? (
-        <span style={spanStyle} className={'Kalend__ButtonBase__animation'} />
-      ) : null}
-    </a>
-  );
+    if(id){
+      return (
+        <a
+          id={id}
+          ref={buttonRef}
+          //onClick={onButtonClick}
+          //onTouchMove={onTouchMove}
+          //onTouchStart={onTouchStart}
+          //onTouchEnd={onTouchEnd}
+          //onMouseDown={onMouseDown}
+          //onMouseUp={onMouseUp}
+          //onMouseMove={onMouseMove}
+          // onTouchStart={handleTouchStart}
+          // onMouseLeave={handleTouchOff}
+          // onTouchEnd={handleTouchOff}
+          // onTouchEndCapture={handleTouchCancel}
+          className={buttonClassName}
+          style={style}
+          href={'/planning/book?id=' + id}
+        >
+          {children ? children : buttonText}
+          {isPressed && !disabled ? (
+            <span style={spanStyle} className={'Kalend__ButtonBase__animation'} />
+          ) : null}
+        </a>
+      );
+    }
+    return (
+      <button
+        id={id}
+        ref={buttonRef}
+        onClick={onButtonClick}
+        onTouchMove={onTouchMove}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+        onMouseDown={onMouseDown}
+        onMouseUp={onMouseUp}
+        onMouseMove={onMouseMove}
+        // onTouchStart={handleTouchStart}
+        // onMouseLeave={handleTouchOff}
+        // onTouchEnd={handleTouchOff}
+        // onTouchEndCapture={handleTouchCancel}
+        className={buttonClassName}
+        style={style}
+      >
+        {children ? children : buttonText}
+        {isPressed && !disabled ? (
+          <span style={spanStyle} className={'Kalend__ButtonBase__animation'} />
+        ) : null}
+      </button>
+    );
 };
 
 export default ButtonBase;
