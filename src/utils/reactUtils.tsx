@@ -3,22 +3,27 @@ export const parseEventString = (
   className: string,
   style: any
 ) => {
-  let newValueString = value;
+  let array = value.split('</br>');
 
-  if (newValueString.indexOf('\\n') !== -1) {
-    newValueString = newValueString.replace(/\\n/g, ' ');
-  }
+  //if (newValueString.indexOf('\\n') !== -1) {
+  //  newValueString = newValueString.replace(/\\n/g, ' ');
+  //}
 
-  if (newValueString.indexOf('\\;') !== -1) {
-    newValueString = newValueString.replace(/\\;/g, ';');
-  }
-  if (newValueString.indexOf('\\,') !== -1) {
-    newValueString = newValueString.replace(/\\,/g, ',');
-  }
+  //if (newValueString.indexOf('\\;') !== -1) {
+  //  newValueString = newValueString.replace(/\\;/g, ';');
+  //}
+  //if (newValueString.indexOf('\\,') !== -1) {
+  //  newValueString = newValueString.replace(/\\,/g, ',');
+  //}
 
   return (
-    <p className={className} style={style}>
-      {newValueString}
-    </p>
+    <div>
+      <p className={className} style={style}>
+        {array[0]}
+      </p>
+      <p className={className} style={style}>
+        {array[1]}
+      </p>
+    </div>
   );
 };
