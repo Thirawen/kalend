@@ -152,7 +152,7 @@
 
 .Kalend__header_calendar_button-text-selected {
   @extend .Kalend__header_calendar_button-text;
-  color: $PRIMARY_LIGHT !important;
+  color: #e06d5e !important;
 
   &-dark {
     @extend .Kalend__header_calendar_button-text-selected;
