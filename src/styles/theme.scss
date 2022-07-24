@@ -42,7 +42,7 @@ $GRAY_900: #1D1F26;
 }
 
 .Kalend__color-text-base {
-  color: $GRAY_900;
+  color: var(--color);
 
   &-dark {
     color: $GRAY_200;

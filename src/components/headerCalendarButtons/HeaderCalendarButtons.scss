@@ -142,7 +142,7 @@
 
 .Kalend__header_calendar_button-text {
   padding: 0 10px 0 10px !important;
-  color: $GRAY_800;
+  color: var(--color);
 
   &-dark {
     @extend .Kalend__header_calendar_button-text;
