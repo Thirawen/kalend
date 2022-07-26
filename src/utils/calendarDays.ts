@@ -61,7 +61,7 @@ export const calendarColors: any = {
   'light green': { dark: '#c5e1a5', light: '#7cb342' },
   yellow: { dark: '#fff59d', light: '#fdd835' },
   amber: { dark: '#ffe082', light: '#ffb300' },
-  orange: { dark: '#ffcc80', light: '#fb8c00' },
+  orange: { dark: '#EA8709', light: '#EA8709' },
   'deep orange': { dark: '#ffab91', light: '#f4511e' },
   brown: { dark: '#bcaaa4', light: '#6d4c41' },
   'blue grey': { dark: '#b0bec5', light: '#546e7a' },
