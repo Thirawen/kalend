@@ -99,7 +99,7 @@ const calculateMondayStartWeekDay = (
   const startDate = date.minus({ days: dayInWeek - 1 });
 
   if (calendarView === CALENDAR_VIEW.MONTH) {
-    if (dayInWeek === 0) {
+    if (dayInWeek === 1) {
       for (let i = 6; i > 0; i--) {
         days.push(date.minus({ days: i }));
       }

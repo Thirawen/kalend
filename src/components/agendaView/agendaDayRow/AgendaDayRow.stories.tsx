@@ -2,8 +2,9 @@ import { AgendaDayRowProps } from './AgendaDayRow.props';
 import { CalendarEvent } from '../../../common/interface';
 import { DateTime, Duration } from 'luxon';
 import { Meta, Story } from '@storybook/react';
-import { datatype, internet, lorem } from 'faker';
+import { faker } from '@faker-js/faker';
 import AgendaDayRow from './AgendaDayRow';
+
 
 const generateCalendarEvents = (
   numberOfEvents: number
@@ -13,26 +14,26 @@ const generateCalendarEvents = (
   for (let index = 0; index < numberOfEvents; index++) {
     const start = day.plus(
       Duration.fromObject({
-        hours: datatype.number({ min: 1, max: 6 }),
-        minutes: datatype.number(60),
+        hours: faker.datatype.number({ min: 1, max: 6 }),
+        minutes: faker.datatype.number(60),
       })
     );
 
     const end = day.plus(
       Duration.fromObject({
-        hours: datatype.number({ min: 6, max: 12 }),
-        minutes: datatype.number(60),
+        hours: faker.datatype.number({ min: 6, max: 12 }),
+        minutes: faker.datatype.number(60),
       })
     );
 
     const event: CalendarEvent = {
-      id: datatype.number(),
+      id: faker.datatype.number(),
       startAt: start.toUTC().toISO(),
       timezoneStartAt: '',
       endAt: end.toUTC().toISO(),
       timezoneEndAt: '',
-      summary: lorem.sentence(12, 6),
-      color: internet.color(0, 0, 0),
+      summary: faker.lorem.sentence(12),
+      color: faker.internet.color(0, 0, 0),
     };
     events.push(event);
   }
