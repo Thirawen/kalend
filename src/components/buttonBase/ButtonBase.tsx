@@ -28,11 +28,13 @@ const ButtonBase = (props: ButtonBaseProps) => {
   const [spanStyle, setSpanStyle] = useState({});
 
   const onButtonClick = (e: any) => {
-    onClick(e);
-
-    if (onClickFromParent) {
-      onClickFromParent();
+    if(e.nativeEvent.explicitOriginalTarget.firstChild.nodeValue == 'Yoga Thérapie' || e.nativeEvent.explicitOriginalTarget.firstChild.nodeValue == 'Carla Lachasseigne'){
+      onClick(e);
+      if (onClickFromParent) {
+        onClickFromParent();
+      }
     }
+
   };
 
   const animateRipple = (event: any): void => {
@@ -116,7 +118,7 @@ const ButtonBase = (props: ButtonBaseProps) => {
         <a
           id={id}
           ref={buttonRef}
-          //onClick={onButtonClick}
+          onClick={onButtonClick}
           //onTouchMove={onTouchMove}
           //onTouchStart={onTouchStart}
           //onTouchEnd={onTouchEnd}
