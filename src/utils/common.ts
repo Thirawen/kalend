@@ -187,7 +187,7 @@ export const createVerticalHours = (timeFormat: TIME_FORMAT): string[] => {
   const result: string[] = [];
 
   if (timeFormat === TIME_FORMAT.H_24) {
-    for (let i = 7; i < 24; i++) {
+    for (let i = 13; i < 24; i++) {
       if (i < 10) {
         result.push(`0${i}`);
       } else {

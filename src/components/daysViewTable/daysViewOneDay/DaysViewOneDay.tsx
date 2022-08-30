@@ -310,7 +310,7 @@ const DaysViewOneDay = (props: DaysViewOneDayProps) => {
 
   const oneDayStyle: any = {
     width: width / getDaysNum(selectedView),
-    height: hourHeight * 17,
+    height: hourHeight * 11,
   };
 
   const isToday: boolean = LuxonHelper.isToday(day);

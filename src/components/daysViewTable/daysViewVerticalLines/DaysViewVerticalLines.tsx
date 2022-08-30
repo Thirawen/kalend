@@ -22,7 +22,7 @@ const renderVerticalLines = (
       left:
         columnWidth * index +
         (selectedView === CALENDAR_VIEW.MONTH ? 0 : CALENDAR_OFFSET_LEFT),
-      height: hourHeight * 17,
+      height: hourHeight * 11,
     };
 
     if (index > 0) {
