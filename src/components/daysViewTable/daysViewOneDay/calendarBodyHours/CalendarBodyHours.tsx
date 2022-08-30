@@ -11,7 +11,7 @@ const getOffsetTop = (
   isAfter12: boolean
 ) => {
   if (format === TIME_FORMAT.H_24) {
-    return (parseInt(hour) - 13) * hourHeight - 4;
+    return (parseInt(hour) - 12) * hourHeight - 4;
   }
 
   if (format === TIME_FORMAT.H_12 && !isAfter12) {

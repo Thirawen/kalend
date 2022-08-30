@@ -12,8 +12,8 @@ const CurrentHourLine = () => {
 
   const wrapperStyle: any = {
     top:
-      currentTime.hour >= 13
-      ? currentTime.hour * config.hourHeight + (currentTime.minute / 60) * config.hourHeight - 936
+      currentTime.hour >= 12
+      ? currentTime.hour * config.hourHeight + (currentTime.minute / 60) * config.hourHeight - 864
       : 0
   };
 
