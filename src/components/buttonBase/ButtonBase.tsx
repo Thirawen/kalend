@@ -28,14 +28,14 @@ const ButtonBase = (props: ButtonBaseProps) => {
   const [spanStyle, setSpanStyle] = useState({});
 
   const onButtonClick = (e: any) => {
-    if(e.nativeEvent.explicitOriginalTarget.firstChild.nodeValue == 'Yoga Thérapie' || e.nativeEvent.explicitOriginalTarget.firstChild.nodeValue == 'Carla Lachasseigne'){
+    if(e.target.parentNode.parentNode.parentNode.style.backgroundColor == 'rgb(229, 57, 53)' || e.target.parentNode.parentNode.style.backgroundColor == 'rgb(229, 57, 53)'){
       onClick(e);
       if (onClickFromParent) {
         onClickFromParent();
       }
     }
-
   };
+
 
   const animateRipple = (event: any): void => {
     const button: any = buttonRef.current;
