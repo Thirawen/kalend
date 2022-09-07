@@ -27,15 +27,15 @@ const ButtonBase = (props: ButtonBaseProps) => {
   const [isPressed, setIsPressed] = useState(false);
   const [spanStyle, setSpanStyle] = useState({});
 
+
   const onButtonClick = (e: any) => {
-    if(e.target.parentNode.parentNode.parentNode.style.backgroundColor == 'rgb(229, 57, 53)' || e.target.parentNode.parentNode.style.backgroundColor == 'rgb(229, 57, 53)'){
+    if(e.target.parentNode.parentNode.parentNode.style.backgroundColor == 'rgb(229, 57, 53)' || e.target.parentNode.parentNode.style.backgroundColor == 'rgb(229, 57, 53)' || e.target.className == 'Kalend__text Kalend__header_calendar_button-text' || e.target.className == 'Kalend__button Kalend__ButtonBase-border Kalend__ButtonBase'){
       onClick(e);
       if (onClickFromParent) {
         onClickFromParent();
       }
     }
   };
-
 
   const animateRipple = (event: any): void => {
     const button: any = buttonRef.current;
