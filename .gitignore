@@ -1,4 +1,4 @@
-/dist/
+# /dist/ - committed for npm git installs
 /node_modules/
 .idea/
 /build/
