@@ -5,7 +5,7 @@ import { DateTime } from 'luxon';
 import { getSelectedViewType } from '../../utils/common';
 import { useContext, useEffect, useState } from 'react';
 import AgendaDayRow from './agendaDayRow/AgendaDayRow';
-import KalendLayout from 'kalend-layout';
+import KalendLayout from '../../kalend-layout';
 import LuxonHelper, { EVENTS_DAY_FORMAT } from '../../utils/luxonHelper';
 
 const renderAgendaEvents = (events: any, calendarDays: DateTime[]) => {

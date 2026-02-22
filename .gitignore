@@ -4,6 +4,7 @@
 /build/
 .parcel-cache
 kalend-*
+!src/kalend-layout/
 calend-*
 .husky
 

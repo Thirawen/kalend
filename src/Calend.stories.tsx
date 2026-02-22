@@ -1,4 +1,4 @@
-import { CALENDAR_VIEW } from 'kalend-layout';
+import { CALENDAR_VIEW } from './kalend-layout';
 import { Meta, Story } from '@storybook/react';
 import Kalend, { KalendProps } from './index';
 

@@ -11,7 +11,7 @@ import { useContext, useEffect, useLayoutEffect, useState } from 'react';
 import CalendarBodyHours from './daysViewOneDay/calendarBodyHours/CalendarBodyHours';
 import DaysViewOneDay from './daysViewOneDay/DaysViewOneDay';
 import DaysViewVerticalLines from './daysViewVerticalLines/DaysViewVerticalLines';
-import KalendLayout from 'kalend-layout';
+import KalendLayout from '../../kalend-layout';
 
 const renderOneDay = (
   calendarDays: DateTime[],

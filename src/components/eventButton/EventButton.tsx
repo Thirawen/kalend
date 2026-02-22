@@ -6,7 +6,7 @@ import { DateTime } from 'luxon';
 import { EVENT_TABLE_DELIMITER_SPACE } from '../../common/constants';
 import { EVENT_TYPE } from '../../common/enums';
 import { EventButtonProps } from './EventButton.props';
-import { MONTH_EVENT_HEIGHT } from 'kalend-layout/constants';
+import { MONTH_EVENT_HEIGHT } from '../../kalend-layout/constants';
 import { calculateHeaderAfterDrag, onMoveHeader } from './utils/draggingHeader';
 import {
   calculateMonthEventAfterDrag,

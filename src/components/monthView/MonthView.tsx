@@ -7,7 +7,7 @@ import { getMonthRows } from './monthWeekRow/MonthWeekRow.utils';
 import { getSelectedViewType } from '../../utils/common';
 import { useContext, useEffect, useState } from 'react';
 import DaysViewVerticalLines from '../daysViewTable/daysViewVerticalLines/DaysViewVerticalLines';
-import KalendLayout from 'kalend-layout';
+import KalendLayout from '../../kalend-layout';
 import MonthWeekRow from './monthWeekRow/MonthWeekRow';
 
 const renderOneRow = (
